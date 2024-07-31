@@ -2,8 +2,10 @@ import { Button, Navbar, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { FaSun } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate=useNavigate();
   return (
     <Navbar className="border-b-2">
       <Link
@@ -33,7 +35,7 @@ export default function Header() {
         >
           <FaSun />
         </Button>
-        <Button outline gradientDuoTone="redToYellow">
+        <Button outline gradientDuoTone="redToYellow" onClick={()=>navigate("/sign-in")}>
           Sign In
         </Button>
         <Navbar.Toggle />
