@@ -6,6 +6,12 @@ export default function SignIn() {
     <form className="flex max-w-md flex-col gap-4 mx-auto mt-8">
       <div>
         <div className="mb-2 block">
+          <Label htmlFor="username" value="Username" />
+        </div>
+        <TextInput id="username" type="text" required />
+      </div>
+      <div>
+        <div className="mb-2 block">
           <Label htmlFor="email" value="Email" />
         </div>
         <TextInput id="email" type="email" required />
@@ -18,11 +24,11 @@ export default function SignIn() {
       </div>
 
       <Button type="submit" gradientDuoTone="redToYellow">
-        Sign In
+        Sign Up
       </Button>
       <div className="flex gap-2 text-sm mt-5">
         <span>Dont Have an account?</span>
-        <Link to="/sign-up" className="text-blue-500">
+        <Link to="/sign-in" className="text-blue-500">
           Sign In
         </Link>
       </div>
