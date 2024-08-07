@@ -1,7 +1,7 @@
 import { Button, Label, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <form className="flex max-w-md flex-col gap-4 mx-auto mt-8">
       <div>
